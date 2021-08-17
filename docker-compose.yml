@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  react-app:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./src:/app/src
+      - /app/node_modules
+    # environment:
+    #   - REACT_APP_NAME=Manejo 365
+    # env_file:
+    #   - ./.env
